@@ -1,33 +1,22 @@
 # Gesture Recognition
 
-#### I am reconfiguring this project for python and building a neural network for better results.
+Trained a neural network to recognize American Sign Language (ASL) gestures using Keras and OpenCV.
 
-## Final Project - Translation Engine From Sign Language to English
+## ASL Gesture Recognition
 
-This application uses a webcam and converts Sign Language to written English.
+Built and trained a convolutional neural network for the recognition of American Sign Language (ASL) gestures. The network was trained on a Kaggle dataset of ASL gestures uploaded by Ayush Thakur.
+The model attained a 57% accuracy on a test set extracted from the dataset.
 
-This application was written in C++ with the msys2 compiler for Windows and Visual Studio Code
+To improve this accuracy, I will be experimenting with different model architectures and datasets from
+Kaggle.
 
-## Usage Instructions
+Moreover, the model was not able to completely recognize the hand in bright lighting conditions.
+I will also be trying out different feature extraction algorithms in OpenCV to get better results.
 
-- Download openFrameworks from their site and set it up following the instructions for the msys2 compiler
-  - After having built the dependencies continue on to the next step
-- Clone this repository into the `$(OF_ROOT)/apps/myApps/` folder
-- Install OpenCV for the msys2 distribution
+## Run
 
-After completing all of the above steps, simply run `make` from the msys2 MinGW32/MinGW64 terminal. \\
-After the project has built use `make RunRelease` to run the application
+To run the code install the requirements with python3.
 
-## Testing
+Then run ```python3 main.py```
 
-Tests were written using the _Catch_ library and a makefile within the tests directory \\
-To run the tests, `cd` into the tests directory and run `make`. \\
-After this, run the `tests.exe` file by running `./tests.exe` from within the directory on the command line
-
-## NOTE
-
-This project has not been configured to run on different environments like Visual Studio, Linux etc.
-
-### Author
-
-Nitish Poddar
+This opens the prediction engine. The results are not very good, especially in bright lighting conditions.
