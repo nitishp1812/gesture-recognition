@@ -1,5 +1,2 @@
 # Compiled Python files
 *.pyc
-
-# Dataset directory
-images/*
